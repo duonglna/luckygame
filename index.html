@@ -1,0 +1,55 @@
+﻿<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <title>JLuckyDraw 抽籤機</title>
+        <meta name="author" content="Jui-Shan Liang" />
+        <link rel="stylesheet" href="jquery-ui-1.8.16.custom.css" type="text/css" />
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <script src="jquery.min.js" type="text/javascript"></script>
+        <script src="jquery-ui.min.js" type="text/javascript"></script>
+        <script src="jluckydraw.js" type="text/javascript"></script>
+        <script src="vue.js" type="text/javascript"></script>
+        <!-- <script src="jquery-3.3.1.min.js" type="text/javascript"></script> -->
+        <!-- <script>
+          window.onload=function(){
+          new Vue({
+          el: '#container',
+          data: {
+            message: 'Hello Vue.js!'
+          }
+          })
+        }
+        </script> -->
+    </head>
+    <body>
+        <div id="container">
+            <div id="list_pane">
+                    <p><strong>List</strong></p>
+                    <textarea id="name_list">
+Test1
+Test2
+Test3
+                    </textarea>
+            </div>
+            <div id="draw_pane">
+                <div id="draw">
+                    <div id="draw-1" class="draw-a"><div class="text">&nbsp;</div></div>
+                    <div id="draw-2" class="draw-b"><div class="text">&nbsp;</div></div>
+                    <div id="draw-3" class="draw-c"><div class="text">&nbsp;</div></div>
+                    <div id="draw-4" class="draw-b"><div class="text">&nbsp;</div></div>
+                    <div id="draw-5" class="draw-a"><div class="text">&nbsp;</div></div>
+                </div>
+                <button id="switch">Submit</button>
+                <div id="ketqua">
+                  <input type="text" name="name1" id="name1">
+                  <input type="text" name="name2" id="name2">
+                  <input type="text" name="name3" id="name3">
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+
+        </div>
+    </body>
+
+</html>
