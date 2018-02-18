@@ -72,11 +72,12 @@ $(document).ready(function() {
             b = b.replace(temp,"");
             $("#name_list").val(b);
             var url ="save.php";
-           $.post(url, $("#draw-3 .text").text() , function(data){
-             console.log('response from the callback function: '+ data);
-             }).fail(function(jqXHR){
-               alert(jqXHR.status +' '+jqXHR.statusText+ ' $.post failed!');
-            });    
+            var mytext = $("#draw-3 .text").text();
+           $.post(url, { mytext: mytext }, function(){
+           console.log('response from the callback function: '+ mytext);
+           }).fail(function(jqXHR){
+             alert(jqXHR.status +' '+jqXHR.statusText+ ' $.post failed!');
+          });
         }
     });
 });
