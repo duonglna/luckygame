@@ -3,7 +3,8 @@ print_r('The php script is called....');
 print_r('The value of $_POST["myText"] is :  ');
 var_dump($_POST['mytext']);
 $post_data = $_POST['mytext'];
-    $filename ='data.txt';
+$now = date("Y-m-d-H-i-sa");
+    $filename ='data'.$now.'.txt';
     $handle = fopen($filename, "w");
 ?>
 <script>console.log(<?php echo $_POST['mytext']; ?>)</script>
